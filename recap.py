@@ -15,7 +15,7 @@ class Modele(object):
     """
     La fonction count() permet de ...
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
-    index013_todoList
+    ...
     """
 
     def setupUi(self, MainWindow):
@@ -138,6 +138,8 @@ class AddItem(object):
     La fonction addItem() permet d'ajouter des données dans un widget
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -211,6 +213,8 @@ class Clear(object):
     La fonction clear() permet de tout supprimer dans le widget
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -299,6 +303,8 @@ class Count(object):
     La fonction count() permet de compter le nombre de composants dans un widget
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -392,6 +398,8 @@ class CurrentRow(object):
     du widget concerné
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -485,6 +493,8 @@ class Item(object):
     le texte de chaque ligne présente dans la zone de liste
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -590,6 +600,9 @@ class SetText(object):
     index008_calculator
     index009_calculator
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
+    index016_linkButton
     """
 
     def setupUi(self, MainWindow):
@@ -638,6 +651,8 @@ class TakeItem(object):
     la donnée (texte, chiffre...) affectée à ce n° de composant
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -732,6 +747,8 @@ class Text(object):
     index008_calculator
     index009_calculator
     index013_todoList
+    index014_addDataBase
+    index015_addDataBase
     """
 
     def setupUi(self, MainWindow):
@@ -789,7 +806,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    # Liste ci-après des fonctions natives de pyqt5
+    """Liste ci-après des fonctions natives de pyqt5"""
     # addItem = AddItem()
     # addItem.setupUi(MainWindow)
     # clear = Clear()
@@ -806,6 +823,6 @@ if __name__ == "__main__":
     # takeItem.setupUi(MainWindow)
     # text = Text()
     # text.setupUi(MainWindow)
-    # Fin de la liste ci-avant des fonctions natives de pyqt5
+    """Fin de la liste ci-avant des fonctions natives de pyqt5"""
     MainWindow.show()
     sys.exit(app.exec_())
