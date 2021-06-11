@@ -722,6 +722,7 @@ class SetText(object):
     index014_addDataBase
     index015_addDataBase
     index016_linkButton
+    index018_radioButtons
     """
 
     def setupUi(self, MainWindow):
