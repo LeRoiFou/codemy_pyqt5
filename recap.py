@@ -38,7 +38,8 @@ class Modele(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -47,7 +48,8 @@ class Modele(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Effacer'
-        self.buttonRemove = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.remove_it())
+        self.buttonRemove = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.remove_it())
         self.buttonRemove.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -56,7 +58,8 @@ class Modele(object):
         self.buttonRemove.setObjectName("buttonRemove")
 
         # bouton 'Supprimer tout'
-        self.buttonDelete = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.clear_it())
+        self.buttonDelete = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.clear_it())
         self.buttonDelete.setGeometry(QtCore.QRect(330, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -65,7 +68,8 @@ class Modele(object):
         self.buttonDelete.setObjectName("buttonDelete")
 
         # bouton 'Sauvegarder'
-        self.buttonSave = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.save_it())
+        self.buttonSave = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.save_it())
         self.buttonSave.setGeometry(QtCore.QRect(490, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -101,7 +105,8 @@ class Modele(object):
         self.buttonSave.setText(_translate("MainWindow", "Sauvegarder"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -113,12 +118,15 @@ class Modele(object):
         self.myLineEdit.setText("")
 
     def remove_it(self):
-        # méthode pour effacer la donnée de la ligne sélectionnée dans la zone de liste
+        # méthode pour effacer la donnée de la ligne 
+        # sélectionnée dans la zone de liste
 
-        # récupération du n° de composant (componant) de la ligne sélectionnée dans la zone de liste
+        # récupération du n° de composant (componant) 
+        # de la ligne sélectionnée dans la zone de liste
         componant_number = self.myList.currentRow()
 
-        # récupération du n° de composant sélectionné et suppression de la ligne concernée
+        # récupération du n° de composant sélectionné et 
+        # suppression de la ligne concernée
         self.myList.takeItem(componant_number)
 
     def clear_it(self):
@@ -158,7 +166,8 @@ class AddItem(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -195,7 +204,8 @@ class AddItem(object):
         self.buttonAdd.setText(_translate("MainWindow", "Ajouter"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -233,7 +243,8 @@ class Clear(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -242,7 +253,8 @@ class Clear(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Supprimer tout'
-        self.buttonDelete = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.clear_it())
+        self.buttonDelete = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.clear_it())
         self.buttonDelete.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -280,7 +292,8 @@ class Clear(object):
         self.buttonDelete.setText(_translate("MainWindow", "Supprimer tout"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -323,7 +336,8 @@ class Count(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -332,7 +346,8 @@ class Count(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Compter'
-        self.buttonSave = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.count_it())
+        self.buttonSave = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.count_it())
         self.buttonSave.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -370,7 +385,8 @@ class Count(object):
         self.buttonSave.setText(_translate("MainWindow", "Compter"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -382,17 +398,20 @@ class Count(object):
         self.myLineEdit.setText("")
 
     def count_it(self):
-        # méthode permettant de compter le nombre de composants dans la zone de liste
+        # méthode permettant de compter le nombre de composants 
+        # dans la zone de liste
 
         # nombre de composants dans la liste
         my_count = self.myList.count()
         
         # affichage du nombre de composants dans la ligne de saisie
-        self.myLineEdit.setText(f"Il y a {my_count} composants dans la zone de liste")
+        self.myLineEdit.setText(
+            f"Il y a {my_count} composants dans la zone de liste")
 
 class CurrentRow(object):
     """
-    La fonction currentRow() permet de récupérer le n° de composant de la ligne sélectionnée
+    La fonction currentRow() permet de récupérer le n° de composant 
+    de la ligne sélectionnée
     du widget concerné
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
@@ -418,7 +437,8 @@ class CurrentRow(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -427,7 +447,8 @@ class CurrentRow(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Effacer'
-        self.buttonRemove = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.remove_it())
+        self.buttonRemove = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.remove_it())
         self.buttonRemove.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -465,7 +486,8 @@ class CurrentRow(object):
         self.buttonRemove.setText(_translate("MainWindow", "Effacer"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -477,18 +499,108 @@ class CurrentRow(object):
         self.myLineEdit.setText("")
 
     def remove_it(self):
-        # méthode pour effacer la donnée de la ligne sélectionnée dans la zone de liste
+        # méthode pour effacer la donnée de la ligne sélectionnée 
+        # dans la zone de liste
 
-        # récupération du n° de composant (componant) de la ligne sélectionnée dans la zone de liste
+        # récupération du n° de composant (componant) de la ligne 
+        # sélectionnée dans la zone de liste
         componant_number = self.myList.currentRow()
 
-        # récupération du n° de composant sélectionné et suppression de la ligne concernée
+        # récupération du n° de composant sélectionné et 
+        # suppression de la ligne concernée
         self.myList.takeItem(componant_number)
 
+class IsChecked(object):
+    """
+    La fonction isChecked() permet de vérifier si l'option choisie a été
+    sélectionnée (notamment pour le widget radioButton)
+    Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
+    index018_radioButtons
+    index019_radioButtons2
+    """
+    
+    def setupUi(self, MainWindow):
+        "Configuration des widgets"
+        
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(500, 365)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        MainWindow.setCentralWidget(self.centralwidget)
+        
+        # Option 1
+        self.radioButton_1 = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButton_1.setGeometry(QtCore.QRect(110, 20, 161, 41))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.radioButton_1.setFont(font)
+        self.radioButton_1.setObjectName("radioButton_1")
+        
+        # Méthode appliquée sur l'option 1
+        self.radioButton_1.toggled.connect(
+            lambda: self.pick(self.radioButton_1))
+        
+        # Option 2
+        self.radioButton_2 = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButton_2.setGeometry(QtCore.QRect(110, 90, 161, 41))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.radioButton_2.setFont(font)
+        self.radioButton_2.setObjectName("radioButton_2")
+        
+        # Option 3
+        self.radioButton_3 = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButton_3.setGeometry(QtCore.QRect(110, 160, 161, 41))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.radioButton_3.setFont(font)
+        self.radioButton_3.setObjectName("radioButton_3")
+        
+        # Affichage de l'option choisie
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(30, 260, 400, 51))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        
+        # Barre de menu
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 429, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        
+        # Barre de statut
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        "Textes affichés aux widgets"
+        
+        _translate = QtCore.QCoreApplication.translate
+        
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.radioButton_1.setText(_translate("MainWindow", "Option 1"))
+        self.radioButton_2.setText(_translate("MainWindow", "Option 2"))
+        self.radioButton_3.setText(_translate("MainWindow", "Option 3"))
+        self.label.setText(_translate(
+            "MainWindow", "Choisissez votre option"))
+        
+    def pick(self, r):
+        "Méthode affichant l'option choisie"
+        
+        if r.isChecked():
+            self.label.setText("Vous avez choisi l'option 1")
+            
 class Item(object):
     """
-    La fonction item() est utilisée pour le widget de zone de liste et permet de récupérer
-    le texte de chaque ligne présente dans la zone de liste
+    La fonction item() est utilisée pour le widget de zone de liste
+    et permet de récupérer le texte de chaque ligne présente dans la 
+    zone de liste
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
     index014_addDataBase
@@ -513,7 +625,8 @@ class Item(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -522,7 +635,8 @@ class Item(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Récupérer'
-        self.buttonSave = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.recover_it())
+        self.buttonSave = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.recover_it())
         self.buttonSave.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -560,7 +674,8 @@ class Item(object):
         self.buttonSave.setText(_translate("MainWindow", "Récupérer"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -584,8 +699,9 @@ class Item(object):
             print(self.myList.item(index))
         print('')
         
-        # affichage des données de la liste dans la console en recourant à une boucle
-        # car chaque composant de la liste est un objet
+        # affichage des données de la liste dans la console 
+        # en recourant à une boucle car chaque composant de la liste
+        # est un objet
         print("Affichage de chaque donnée dans la zone de liste")
         for item in items:
             print(item.text())
@@ -622,7 +738,8 @@ class SetFont(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -631,7 +748,8 @@ class SetFont(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Effacer'
-        self.buttonRemove = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.remove_it())
+        self.buttonRemove = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.remove_it())
         self.buttonRemove.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -640,7 +758,8 @@ class SetFont(object):
         self.buttonRemove.setObjectName("buttonRemove")
 
         # bouton 'Supprimer tout'
-        self.buttonDelete = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.clear_it())
+        self.buttonDelete = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.clear_it())
         self.buttonDelete.setGeometry(QtCore.QRect(330, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -677,7 +796,8 @@ class SetFont(object):
         self.buttonDelete.setText(_translate("MainWindow", "Supprimer tout"))
      
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -692,12 +812,15 @@ class SetFont(object):
         self.statusbar.showMessage("Donnée ajoutée")
 
     def remove_it(self):
-        # méthode pour effacer la donnée de la ligne sélectionnée dans la zone de liste
+        # méthode pour effacer la donnée de la ligne sélectionnée 
+        # dans la zone de liste
 
-        # récupération du n° de composant (componant) de la ligne sélectionnée dans la zone de liste
+        # récupération du n° de composant (componant) de la ligne 
+        # sélectionnée dans la zone de liste
         componant_number = self.myList.currentRow()
 
-        # récupération du n° de composant sélectionné et suppression de la ligne concernée
+        # récupération du n° de composant sélectionné et 
+        # suppression de la ligne concernée
         self.myList.takeItem(componant_number)
 
         # modification du texte dans la barre d'état
@@ -723,6 +846,7 @@ class SetText(object):
     index015_addDataBase
     index016_linkButton
     index018_radioButtons
+    index019_radioButtons2
     """
 
     def setupUi(self, MainWindow):
@@ -743,7 +867,8 @@ class SetText(object):
         self.my_label.setObjectName("my_label")
 
         # bouton
-        self.my_button = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.press_it())
+        self.my_button = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.press_it())
         self.my_button.setGeometry(QtCore.QRect(310, 210, 261, 61))
         font = QtGui.QFont()
         font.setPointSize(26)
@@ -795,7 +920,8 @@ class ShowMessage(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -804,7 +930,8 @@ class ShowMessage(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Effacer'
-        self.buttonRemove = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.remove_it())
+        self.buttonRemove = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.remove_it())
         self.buttonRemove.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -813,7 +940,8 @@ class ShowMessage(object):
         self.buttonRemove.setObjectName("buttonRemove")
 
         # bouton 'Supprimer tout'
-        self.buttonDelete = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.clear_it())
+        self.buttonDelete = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.clear_it())
         self.buttonDelete.setGeometry(QtCore.QRect(330, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -849,7 +977,8 @@ class ShowMessage(object):
         self.buttonDelete.setText(_translate("MainWindow", "Supprimer tout"))
      
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -864,12 +993,15 @@ class ShowMessage(object):
         self.statusbar.showMessage("Donnée ajoutée")
 
     def remove_it(self):
-        # méthode pour effacer la donnée de la ligne sélectionnée dans la zone de liste
+        # méthode pour effacer la donnée de la ligne sélectionnée
+        # dans la zone de liste
 
-        # récupération du n° de composant (componant) de la ligne sélectionnée dans la zone de liste
+        # récupération du n° de composant (componant) de la ligne sélectionnée
+        # dans la zone de liste
         componant_number = self.myList.currentRow()
 
-        # récupération du n° de composant sélectionné et suppression de la ligne concernée
+        # récupération du n° de composant sélectionné et suppression
+        # de la ligne concernée
         self.myList.takeItem(componant_number)
 
         # modification du texte dans la barre d'état
@@ -885,8 +1017,9 @@ class ShowMessage(object):
     
 class TakeItem(object):
     """
-    La fonction takeItem() permet de récupérer le n° de composant concerné et de supprimer
-    la donnée (texte, chiffre...) affectée à ce n° de composant
+    La fonction takeItem() permet de récupérer le n° de composant 
+    concerné et de supprimer la donnée (texte, chiffre...) affectée
+    à ce n° de composant
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index013_todoList
     index014_addDataBase
@@ -911,7 +1044,8 @@ class TakeItem(object):
         self.myLineEdit.setObjectName("myLineEdit")
 
         # bouton 'Ajouter'
-        self.buttonAdd = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.add_it())
+        self.buttonAdd = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.add_it())
         self.buttonAdd.setGeometry(QtCore.QRect(10, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -920,7 +1054,8 @@ class TakeItem(object):
         self.buttonAdd.setObjectName("buttonAdd")
 
         # bouton 'Effacer'
-        self.buttonRemove = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.remove_it())
+        self.buttonRemove = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.remove_it())
         self.buttonRemove.setGeometry(QtCore.QRect(170, 80, 141, 41))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -958,7 +1093,8 @@ class TakeItem(object):
         self.buttonRemove.setText(_translate("MainWindow", "Effacer"))
 
     def add_it(self):
-        # méthode pour ajouter le texte de la ligne de saisie dans la zone de liste
+        # méthode pour ajouter le texte de la ligne de saisie 
+        # dans la zone de liste
 
         # récupération du texte affiché dans la ligne de saisie
         text = self.myLineEdit.text()
@@ -970,12 +1106,15 @@ class TakeItem(object):
         self.myLineEdit.setText("")
 
     def remove_it(self):
-        # méthode pour effacer la donnée de la ligne sélectionnée dans la zone de liste
+        # méthode pour effacer la donnée de la ligne sélectionnée
+        # dans la zone de liste
 
-        # récupération du n° de composant (componant) de la ligne sélectionnée dans la zone de liste
+        # récupération du n° de composant (componant) de la ligne sélectionnée
+        # dans la zone de liste
         componant_number = self.myList.currentRow()
 
-        # récupération du n° de composant sélectionné et suppression de la ligne concernée
+        # récupération du n° de composant sélectionné et 
+        # suppression de la ligne concernée
         self.myList.takeItem(componant_number)
 
 class Text(object):
@@ -987,6 +1126,7 @@ class Text(object):
     index013_todoList
     index014_addDataBase
     index015_addDataBase
+    index019_radioButtons2
     """
 
     def setupUi(self, MainWindow):
@@ -1007,7 +1147,8 @@ class Text(object):
         self.my_label1.setObjectName("my_label1")
 
         # bouton
-        self.my_button = QtWidgets.QPushButton(self.centralwidget, clicked=lambda:self.press_it())
+        self.my_button = QtWidgets.QPushButton(
+            self.centralwidget, clicked=lambda:self.press_it())
         self.my_button.setGeometry(QtCore.QRect(310, 210, 261, 61))
         font = QtGui.QFont()
         font.setPointSize(26)
@@ -1031,14 +1172,16 @@ class Text(object):
         _translate = QtCore.QCoreApplication.translate
 
         MainWindow.setWindowTitle(_translate("MainWindow", "Récapitulatif"))
-        self.my_label1.setText(_translate("MainWindow", "Texte étiquette n° 1"))
-        self.my_button.setText(_translate("MainWindow", "Appuies !"))
-        self.my_label2.setText(_translate("MainWindow", "Texte étiquette n° 2"))
+        self.my_label1.setText(_translate(
+            "MainWindow", "Texte étiquette n° 1"))
+        self.my_button.setText(_translate(
+            "MainWindow", "Appuies !"))
+        self.my_label2.setText(_translate(
+            "MainWindow", "Texte étiquette n° 2"))
 
     def press_it(self):
         
         self.my_label2.setText(self.my_label1.text())
-
 
 if __name__ == "__main__":
     import sys
@@ -1055,6 +1198,8 @@ if __name__ == "__main__":
     # currentRow.setupUi(MainWindow)
     # item = Item()
     # item.setupUi(MainWindow)
+    # is_checked = IsChecked()
+    # is_checked.setupUi(MainWindow)
     # setText = SetText()
     # setText.setupUi(MainWindow)
     # showMessage = ShowMessage()
