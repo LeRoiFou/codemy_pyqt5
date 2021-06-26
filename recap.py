@@ -514,9 +514,11 @@ class IsChecked(object):
     """
     La fonction isChecked() permet de vérifier si l'option choisie a été
     sélectionnée (notamment pour le widget radioButton)
+    Autre possibilité : recourir à la fonction checkState()
     Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
     index018_radioButtons
     index019_radioButtons2
+    index020_checkBoxes
     """
     
     def setupUi(self, MainWindow):
