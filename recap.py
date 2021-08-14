@@ -925,6 +925,7 @@ class SetText(object):
     index018_radioButtons
     index019_radioButtons2
     index023_ComboBoxes
+    index025_NewWindows1
     """
 
     def setupUi(self, MainWindow):
@@ -1205,6 +1206,7 @@ class Text(object):
     index014_addDataBase
     index015_addDataBase
     index019_radioButtons2
+    index025_NewWindows1
     """
 
     def setupUi(self, MainWindow):
