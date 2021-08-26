@@ -298,6 +298,7 @@ class Clear(object):
     index013_todoList
     index014_addDataBase
     index015_addDataBase
+    index027_FileUI
     """
 
     def setupUi(self, MainWindow):
@@ -927,6 +928,7 @@ class SetText(object):
     index023_ComboBoxes
     index025_NewWindows
     index026_NewWindow
+    index027_FileUI
     """
 
     def setupUi(self, MainWindow):
