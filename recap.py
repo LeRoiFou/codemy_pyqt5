@@ -221,6 +221,7 @@ class AddItem(object):
     index013_todoList
     index014_addDataBase
     index015_addDataBase
+    index028_DependentWidgets
     """
 
     def setupUi(self, MainWindow):
@@ -299,6 +300,7 @@ class Clear(object):
     index014_addDataBase
     index015_addDataBase
     index027_FileUI
+    index028_DependentWidgets
     """
 
     def setupUi(self, MainWindow):
@@ -683,6 +685,10 @@ class Item(object):
     index013_todoList
     index014_addDataBase
     index015_addDataBase
+    
+    Pour le widget combobox, on utilise itemData.
+    Fonction retrouvée dans les cours suivants dans codemy_pyqt5:
+    index028_DependentWidgets
     """
 
     def setupUi(self, MainWindow):
