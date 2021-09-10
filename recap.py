@@ -935,6 +935,7 @@ class SetText(object):
     index025_NewWindows
     index026_NewWindow
     index027_FileUI
+    index029_FileDialogBoxes
     """
 
     def setupUi(self, MainWindow):
