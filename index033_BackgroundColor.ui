@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCouleurs">
+    <property name="title">
+     <string>Couleurs</string>
+    </property>
+    <addaction name="actionNoir"/>
+    <addaction name="actionBlanc"/>
+    <addaction name="actionRouge"/>
+    <addaction name="actionBleu"/>
+    <addaction name="actionVert"/>
+    <addaction name="actionJaune"/>
+   </widget>
+   <addaction name="menuCouleurs"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNoir">
+   <property name="text">
+    <string>Noir</string>
+   </property>
+  </action>
+  <action name="actionBlanc">
+   <property name="text">
+    <string>Blanc</string>
+   </property>
+  </action>
+  <action name="actionRouge">
+   <property name="text">
+    <string>Rouge</string>
+   </property>
+  </action>
+  <action name="actionBleu">
+   <property name="text">
+    <string>Bleu</string>
+   </property>
+  </action>
+  <action name="actionVert">
+   <property name="text">
+    <string>Vert</string>
+   </property>
+  </action>
+  <action name="actionJaune">
+   <property name="text">
+    <string>Jaune</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
